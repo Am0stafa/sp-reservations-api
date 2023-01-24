@@ -9,6 +9,7 @@ export const options = {
   vus: 50,
 };
 
+//will call this endpoint as fast as possible for 10 seconds
 export default function () {
   const res = http.get('http://localhost:3000/api/v1/health');
   // assertions
