@@ -14,5 +14,5 @@ export default function () {
   const res = http.get('http://localhost:3000/api/v1/health');
   // assertions
   check(res, { 'status was 200': (r) => r.status == 200 });
-  sleep(1);
+  sleep(1); // to see how may request you can handle per second
 }
